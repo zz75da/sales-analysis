@@ -32,7 +32,7 @@ analytical and engineering skills.
 
 | Analysis | Finding |
 |---|---|
-| **Pareto / Lorenz** | Gini > 0.6 — top ~20% of customers drive ~80% of revenue |
+| **Pareto / Lorenz** | Gini = 0.44 — top ~20% of customers drive ~80% of revenue |
 | **Anomaly detection** | October category 1 drop: −80% sessions, stable prices → supply failure, not demand |
 | **A/B Test (gender)** | Transaction-level p < 0.001 was a **false positive** (pseudo-replication); user-level p = 0.18 → no effect |
 | **Churn model** | Random Forest outperforms Logistic Regression on AUC & recall; recency is the dominant signal |
