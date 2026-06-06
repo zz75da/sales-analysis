@@ -15,7 +15,7 @@ analytical and engineering skills.
 
 ```
 .
-├── salesAnalysis_dx1_improved.ipynb   # Main notebook (17 sections, 237 cells)
+├── salesAnalysis_dx1_improved.ipynb   # Main notebook (18 sections, 249 cells)
 ├── data/
 │   ├── customers.csv                  # Customer demographics
 │   ├── products.csv                   # Product catalog
@@ -56,20 +56,21 @@ analytical and engineering skills.
 | 9 | KPI Dashboard | Aggregated metrics |
 | 10 | A/B Testing | Mann-Whitney U, Cohen's d, pseudo-replication correction |
 | 11 | Correlation & Features | Pearson correlation matrix |
-| 12 | Business Insights | 5 actionable recommendations |
+| 12 | Business Insights | 6 actionable recommendations |
 | 13 | Final Conclusion | Executive summary across all sections |
-| 14 | RFM Segmentation | Recency/Frequency/Monetary scoring, 5 segments |
-| 15 | Customer Clustering | KMeans, elbow + silhouette selection |
+| 14 | RFM Segmentation | Recency/Frequency/Monetary scoring, 6 segments |
+| 15 | Customer Clustering | KMeans, elbow + silhouette selection (k=5) |
 | 16 | Churn Prediction | Logistic Regression vs Random Forest, ROC, CV |
 | 17 | **CLV Prediction** | **BG/NBD + Gamma-Gamma, XGBoost Pipeline, Gold/Silver/Bronze tiers** |
+| 18 | **Advanced E-Commerce Analytics** | **Cohort retention, purchase cycle, cross-category LTV, seasonal heatmap** |
 
 ---
 
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/ecommerce-sales-analysis.git
-cd ecommerce-sales-analysis
+git clone https://github.com/zz75da/sales-analysis.git
+cd sales-analysis
 
 pip install -r requirements.txt
 
