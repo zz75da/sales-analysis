@@ -32,12 +32,12 @@ analytical and engineering skills.
 
 | Analysis | Finding |
 |---|---|
-| **Pareto / Lorenz** | Gini = 0.44 — top ~20% of customers drive ~80% of revenue |
+| **Pareto / Lorenz** | Gini = 0.44 — top ~50% of customers drive 80% of revenue (moderate concentration, not the classic 80/20 pattern) |
 | **Anomaly detection** | October category 1 drop: −80% sessions, stable prices → supply failure, not demand |
 | **A/B Test (gender)** | Transaction-level p < 0.001 was a **false positive** (pseudo-replication); user-level p = 0.18 → no effect |
-| **Churn model** | Random Forest outperforms Logistic Regression on AUC & recall; recency is the dominant signal |
-| **CLV — BG/NBD** | Probabilistic 12-month forecast per customer using `lifetimes` |
-| **CLV — XGBoost** | ML regression pipeline, TimeSeriesSplit CV, serialised for production scoring |
+| **Churn model** | AUC ≈ 1.00 — caught as a label leak (target = `recency > 90 days`, and recency is an input feature), not a real result |
+| **CLV — BG/NBD** | Probabilistic 12-month forecast per customer using `lifetimes`; R² strongly negative on holdout — underperforms a naive mean |
+| **CLV — XGBoost** | R² = 0.05 on the full held-out test set (weak fit); substantially outperforms BG/NBD on the customers both models can score |
 
 ---
 
